@@ -1,0 +1,11 @@
+australian_companies:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: postgres
+      password: password
+      dbname: australian_companies
+      schema: public
