@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: australian_companies
+    schema: raw
+    tables:
+      - name: common_crawl
+        description: Raw data from Common Crawl extraction
+      - name: abr
+        description: Raw data from Australian Business Register

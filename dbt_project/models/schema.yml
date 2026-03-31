@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_common_crawl
+    columns:
+      - name: website_url
+        tests:
+          - not_null
+      - name: cleaned_company_name
+        tests:
+          - not_null
+
+  - name: stg_abr
+    columns:
+      - name: cleaned_abn
+        tests:
+          - not_null
+          - unique
+
+  - name: integrated_companies
+    columns:
+      - name: abn
+        tests:
+          - unique
+      - name: company_name
+        tests:
+          - not_null
