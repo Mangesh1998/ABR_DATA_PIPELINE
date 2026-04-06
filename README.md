@@ -36,4 +36,3 @@ This project builds a data pipeline to collect, clean, and integrate Australian 
 - **DBT Tests:** Passed for data quality.
 
 ## GitHub Repo
-https://github.com/Mangesh1998/ABR_DATA_PIPELINE
