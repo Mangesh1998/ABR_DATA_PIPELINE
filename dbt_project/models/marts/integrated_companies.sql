@@ -31,5 +31,5 @@ SELECT
     state
 FROM merged
 WHERE company_name IS NOT NULL
--- Deduplication: keep first occurrence
+-- Deduplication: keep first occurrence.
 QUALIFY ROW_NUMBER() OVER (PARTITION BY abn ORDER BY company_name) = 1
